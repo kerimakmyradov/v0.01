@@ -5,6 +5,7 @@ let result=document.getElementById('result');
 // function to fetch data from api
 let getMovie=()=>{
     let movieName=movieNameRef.value;
+    // replace key env variable with ur own that u've got from omdb api
     let url=`https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     // if input field is empty
